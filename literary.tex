@@ -173,22 +173,93 @@ area, and finally our data policies and budget requests.
 
 \section{State of the art}
 
-Proactive evolution of text for its optimization has been done so far
+In general, computational linguistics  has received a lot of
+attention lately, with yearly symposiums devoted to it and many
+authors advocating computational approaches to text analysis, as
+opposed to purely qualitative ones \cite{roque2012towards}. The main lines
+of research are concentrated around analysis and comparison of texts;
+analysis tools include complex networks
+\cite{1367-2630-14-4-043029,0295-5075-100-5-58002} whose extraction
+from literary fiction is not trivial \cite{elson2010extracting}, but,
+once done, allows a whole new set of tools for analyzing the structure
+of literary works \cite{seo14:snf};  writing-style
+features \cite{ASI:ASI20316} are also used for this kind of analysis
+and phrase structure fragments \cite{van2012literary}, which has
+recently been used to compare different kinds of literary corpus
+\cite{jautze2013high}. These two papers have been the result of the
+project \href{http://literaryquality.huygens.knaw.nl/}{The riddle of
+  literary quality}, a institute by the Huygens institute for the
+History of the Netherlands, funded by the Computational Humanities
+Programme. It is indeed, interesting to see this kind of initiatives,
+since they prove that measuring literaty quality computationally is
+still a challenge; in fact, we intend to take this problem a bit
+further by aiming to {\em improve} the quality of a literaty text
+using quality measures and stochastic optimization algorithms. 
+
+In fact, there are some works in this direction already; proactive evolution of text for its optimization has been done so far
 in a very controlled environment, such as technical texts
-\cite{Rascu06acontrolled,hernandez2004checking}. It has to be preceded by a set of analysis
-that include complex networks
-\cite{1367-2630-14-4-043029,0295-5075-100-5-58002} or writing-style
-features \cite{ASI:ASI20316}. Incorporation of interactive features
+\cite{Rascu06acontrolled,hernandez2004checking}. Doing it in a less
+constrained envirohment or incorporating interactive features
 has not been done so far, although nowadays is an easily available
-metric. Even more so, criticism can also be gauged to measure the
+metric, since it is very easy to measure the success of an Instagram
+picture or Facebook post (the last of which is more {\em literary} in
+the traditional sense, although the extensive use of hashtags by the
+former could be also open to optimization). We have also experimented
+by generating stories \cite{2014arXiv1403.3084G} and even whole books
+\cite{Merelo201401}, but no attempt has been made to make it even
+remotely literary. Content-generation tools could be combined with
+content-improvement (which we call {\em literary engineering}) tools
+to assist in the creation of high-quality literary (and commercial)
+works, or simply increase the productivity and leave the purely
+creative work to the computing engine that can do it better; the human
+brain. 
+
+Even more so, criticism can also be gauged to measure the
 quality of the text it is talking about. Finally, personalization of
 text, so far, has not been done to the best of our knowledge.
 
 That is why this project will advance the state of the art in several
-areas, be them algorithmic, methodological or purely technical.
+areas, be them algorithmic, methodological or purely technical,
+providing open source tools to carry out text-improvement tasks. 
 
 \section{Objectives}
 \label{sec:obj}
+
+The main objective is to create a tool that is able to improve the literary
+quality of a written text. This objective is divided in several
+sub-objectives. \begin{itemize}
+\item Examine different measures of literary quality and create an
+  aggregated value (or {\em fitness} that describes in a single value
+  (or multiple criteria) the quality of a work.
+\item Optimize text-analysis tools to be able to make a fast model of
+  a written work.
+\item Create an abstract phrase model that will be used to represent
+  it and, eventually, optimize it
+\item Design an evolutionary algorithm for optmization of literary
+  texts that uses as fitness the measure described in the first bullet
+  point, as representation the model described in the third bullet
+  point which has been obtained in a reasonable amount of time thanks
+  to the tool created in the second bullet point
+\end{itemize}
+
+A non-scientific objective will be to follow an open science
+methodology during the whole duration of the project. Our team is
+committed to open science, and offers as a proof former work \href{http://github.com/JJ}{developed
+and described in GitHub} and the already finished project
+\href{http://canube.wordpress.com}{CANUBE}, which was locally funded.
+
+
+
+
+(that is, solve
+  the riddle of literary cuality) to create an aggregated value. This
+  measure will integrate measures obtained by text analysis together
+  with user-generated measures (scores obtained via Amazon or Google
+  Book Reviews or goodreads, {\em likes} or {\em stars} in social
+  networks, and text-mining of published reviews in literary magazines
+  or answers. We will include in this measure similarity measures
+  obtained by analysis of classical (in general, public domain)
+  works. 
 
 \section{Methodology}
 \label{sec:meth}
