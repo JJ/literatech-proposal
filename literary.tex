@@ -262,7 +262,7 @@ This will be our minimum achievable objective\begin{enumerate}
   \cite{ae09} or our node.js EA module \cite{nodeo2014}) a
   text-improvement evolutionary algorithm. 
 \item Obtain a 10\% improvement of the Fog and Flesch index of said
-  texts.
+  texts with a runtime of less than 24 hours. 
 \end{enumerate}
 
 In the next section we will explain the steps we will be taking,
@@ -329,6 +329,159 @@ them.
 These tools will have to be applied to the text, probably preceded by
 a preprocessing phase where it will be analyzed. We will talk about
 this phase in the next subsection.
+
+\subsection{Creating an abstract sentence representation}
+
+The main objective of this phase in the investigation will be to find,
+from a particular sentence, which possible alternatives are
+possible. That calls for identifying {\em important} (and also {\em malleable} words in the
+phrase (subjects, adjectives, verbs) which could be subject to
+change. 
+
+A word by word change is not the only, or even the best, way of
+improving a text. But it has been experimented in commercial
+copy-editing for a long time, using only certain words and a limited
+amount of possible substitutions. For instance, a sentence like this
+one
+\begin{quote}
+This widget is the best in its category
+\end{quote}
+could be reformulated with possible alternatives
+\begin{quote}
+This \{widget, apparatus, engine, machine, device\} is the \{best, most
+  robust, most powerful, best known\} in its \{class, category, kind\}
+\end{quote}
+, and obtaining the best combination according to some index (number
+of words or the aforementioned Fog or Flesch indices) would be a
+matter of using any combinatorial optimization algorithm.
+
+However, even if the optimization phase is done automatically, writing
+the phrase, selecting possible words for improvement and creating
+possible alternatives is done by hand, with resulting low
+productivity. 
+
+What we propose in this project is to do that phase automatically and
+for large (several hundreds of sentences) texts. That processing is
+done by so-called \href{http://en.wikipedia.org/wiki/Part-of-speech_tagging}{{\em part-of-speech} taggers}, which involves a
+process of word-category disambiguation. A {\em tagged} sentence
+includes a model of the sentence with each word labelled (tagged) with
+its position in the sentence, and at the same time a sentence
+structure (that could, itself, be an object of optimization, although
+this is not our objective in this project).
+
+This phase is, initially, an evaluation phase, since there are many
+open source available tools that are able to perform it on
+unconstrained English text. However, that \href{http://mattwilkens.com/2008/11/08/evaluating-pos-taggers-speed/}{the time they take to analyze a single sentence} can be quite
+high. We will part from off-the-shelf open source implementations like
+\href{http://gate.ac.uk/wiki/twitter-postagger.html}{GATE} and, if needed, will
+apply best-of-breed techniques to optimize for speed so that whole
+1-to-10K word corpuses can be analyzed in a reasonable amount of
+time. Current POST seem to run at speeds from 13 words per second to
+5K; in any case, speed seems to be an issue and we want to take the
+contingency of low performance of POST into account in this project in
+case it arises. 
+
+Once parts of speech have been tagged, a second processing phase will
+look for possible alternatives. Some words like ``word'' will have no
+alternative. But some like {\em tree} might be substituted by hyponyms
+like {\em oak tree} or {\em poplar} or hypernyms like {\em plant}.
+Some words will be quite malleable ({\em rain}) while others might be
+much less {\em fiduciary}. At any rate, by using ontologies like
+Wordnet (or equivalent in other languages) we will build a hyper-model
+of the text by substituting every word by a list of possible
+substitutions.
+
+The text will then be represented by one of the different
+alternatives; a set of values for these alternatives will form the
+{\em chromosome} for the evolutionary algorithm that will be run on
+them \cite{eiben2002evolutionary}. This is a combinatorial
+optimization problem (finding the best combination) for which
+ready-made solutions already exist. However, its sheer size will
+present some challenges that will also have to be solved. This will be
+addressed in the next section, that deals with the evolutionary
+algorithm itself.
+
+\subsection{Evolutionary algorithm for combinatorial/literary optimization}
+
+The main thrust of this project lies in the first two objectives, and
+specially in the development of a fast and reliable literary
+metric. However, we are dealing with a search problem in a potentially
+huge space which will need specific techniques to deal with it.
+
+Several methods can be used for combinatorial optimization. In
+general, simulated quenching
+\cite{DBLP:journals/apin/CastilloARMGLG12} obtains results that are
+faster, but less accurate, than evoltutionary algorithms, and has been
+applied successfully to another combinatorial optimization problem,
+the MasterMind puzzle \cite{jj-ppsn96}. This algorith, available in
+our {\tt Algorithm::Evolutionary} library \cite{ae09}, can be readily
+tried as a first approximation. However, evolutionary algorithms are
+slower but more efficient, so we will test different implementations,
+including, eventually, distributed computing or even volunteer
+browser-based implementations \cite{gecco07:workshop:dcor,} to obtain
+a solution in a reasonable amount of time. 
+
+The evolutionary algorithm will have to adapt to the single or
+multi-objective metrics chosen in the first step. Any of them has been
+well studied and there are many implementations available, from ourn
+own to the libraries written in Java \href{DBLP:conf/iwann/MereloRACML11}{ECJ} (which is the closest thing
+to a standard, with several dozens versions so far) or \href{http://code.google.com/p/deap/}{DEAP} (in
+Python, with increasing popularity). 
+
+Implementation is always important
+\cite{DBLP:conf/iwann/MereloRACML11} and first results obtained with
+it might lead to a reformulation
+of the evolutionary algorithm used, opting for more exotic forms of
+implementation (map/reduce implementations or dataflow computing). 
+
+At any rate, this project is more application-oriented than
+basic-science. Even if we attempt to start a new and fruitful line of
+investigation with it, one year is one year and we cannot solve all
+possible problems, so in many cases we will opt (maybe fine-tuned)
+off-the-shelf technology that is readily available when possible.
+
+This and other horizontal issues will be the matter of the next
+subsection,
+
+\subsection{Horizontal issues and temporization}
+
+Since it is a project that will take a single year, we will have only
+two workpackages.
+
+\subsubsection{Workpackage one}
+
+This package will include all research and development work. It will
+be carried by the Principal Investigator as well as the hired PhD
+student.
+
+\begin{itemize}
+\item {\bf Task 1.1} Addresses first objetive: analysis and formulation of
+  quality metrics for literary texts. Release of software implementation.
+ {\bf Deliverable}: technical
+  report and/or conference paper. Duration: months 0 to 3.
+\item {\bf Task 1.2} Creation of models of literary texts by merging
+  part-of-speech tagging and ontolologies. {\bf Deliverable}: technical
+  report and/or conference paper.  Release of a new version of
+  software including this. Duration: months 4 to 7. 
+\item {\bf Task 1.3} Design and implementation of an algorithm for
+  optimization of literary texts. {\bf Deliverable}: technical
+  report and/or conference paper. Final release (for the project) of
+  the open source implementation.  Duration: months 7 to 12.
+\end{itemize}
+
+The PI and our research group GeNeura is committed to open science, so
+all software will be released under a strong open source license
+whenever upstream libraries allow it.
+
+\subsubsection{Workpackage two}
+
+This package will include ancillary work, including administration,
+communication and community engagement. Each will receive a different
+task, with rolling deliverables and a duration that will span the
+whole project, 12 months.
+
+
+ 
 
 
 
