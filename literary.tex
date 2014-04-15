@@ -13,7 +13,7 @@
 %
 %    Copyright: John A Stevenson, University of Edinburgh, Twitter: @volcan01010
 
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt,twocolumn]{article}
 
 %%%%%%%%%%% PAGE SIZE: Set up page with 2 cm margins
 \usepackage{anysize}
@@ -75,6 +75,8 @@
 \date{\today}
 
 \begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 
@@ -84,7 +86,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Outline}
 \begin{quote}
-This project proposes the construction of a methodology and
+  This project proposes the construction of a methodology and
   set of tools that aim to assess the quality, identify authors and,
   eventually, use those measures for the improvement of written texts
   (including hypertext), bringing the era of computer-aided
@@ -92,7 +94,8 @@ This project proposes the construction of a methodology and
   has helped, and continues to help, art as well as engineering.
 \end{quote}
 \rule{\textwidth}{1pt}
-
+\end{@twocolumnfalse}
+]
 \section{Introduction}
 
 The editorial industry is in turmoil since the extensive consumption
@@ -103,15 +106,37 @@ At the same time, the quality of these works is variable. The
 publishing industry has many tools: correctors, editors, career
 managers and translators that are not available to single, independent
 authors, or are at a high cost. These {\em literary tools} are mainly manual and have not been
-automated beyond grammar and spelling corrections. Translation tools,
-at the same time, have eventually to be reviewed by a human to reach a
-good level of quality. 
+automated beyond grammar and spelling corrections. The product of translation tools,
+at the same time, has eventually to be reviewed by a human to reach a
+good level of quality.
 
-This project proposes the creation of methodologies, algorithms and
-software tools that aid in automation of the whole creation and
-copyediting process:
-from idea to final typesetting, and even improvement in new editions
-based on the automatic processing of literary reviews. 
+From the point of view of textual authors, they are at the same level
+graphic designers where 20 years ago, animation artists were 80 years ago and comic book writers were 50
+years ago. Or architects were a hundred years ago. Most art (or, in
+contemporary terms, content creation) uses tools to automate part of
+the work. Architects (physical and software) reuse patterns to build;
+comic writers, for a long time, have used patterns and textures that
+can be transferred to the page and they, along with graphic
+illustrators, have used freehand software tools to perform all kind of
+tasks, from simple fills to more complex transitions. Animation artist
+work on models, and, instead of painstakingly moving physical models
+of their characterss  Harryhausen-style create models which are then
+used in complex software pipelines to create motion and, eventually,
+the whole motion picture.
+
+However, writers, barring plagiarism, do have to sit down to write,
+letter by letter and sentence by sentence, their whole work, and this
+affects creative as well as commercial writers. The most advanced tool
+that they use is a typo and grammar checker, but even so the draft has
+to go through several human eyes and minds to be corrected, polished
+at several levels (is this character necessary? Is this final coherent
+and genre-caononical?)
+
+This project is the first step in the creation of methodologies, algorithms and
+software tools that aid in automation of the whole literary creation and
+copyediting process: from idea to final typesetting, and even improvement in new editions
+based on the automatic processing of literary reviews or any other
+kind of feedback received by the text.
 
 This project will match natural language processing tools for
 analyzing original works as well as reviews, ontologies and thesaurus
@@ -139,6 +164,13 @@ based on user interaction and reaction and automatic adaptation of
 text description of products in an online website depending on the
 customer profile or the interaction of customers with it. 
 
+The rest of the proposal is organized as follows. Next we present the
+state of the art in {\em literary engineering}. Following up we will
+present the long-term objectives of research, short-term objectives
+for this proposal, and minimal objectives that will be achieved at the
+end of the funded period. We will also present our experience in this
+area, and finally our data policies and budget requests.
+
 \section{State of the art}
 
 Proactive evolution of text for its optimization has been done so far
@@ -155,7 +187,14 @@ text, so far, has not been done to the best of our knowledge.
 That is why this project will advance the state of the art in several
 areas, be them algorithmic, methodological or purely technical.
 
+\section{Objectives}
+\label{sec:obj}
+
+\section{Methodology}
+\label{sec:meth}
+
 \section{Our experience}
+\label{sec:exp}
 
 GeNeura team (http://geneura.wordpress.com) includes a published
 writer that has won literary prices in its cast, which has them
@@ -178,6 +217,16 @@ analysis to co-authorship in particular areas
 \subsection*{Acknowledgements}
 \textit{This \LaTeX template was produced by John A Stevenson, and originally published \href{http://all-geo.org/volcan01010/2013/07/grant-applications-are-hard-work-includes-latex-template}{here}.  For volcanology and scientific computing news, visit the blog at \href{http://all-geo.org/volcan01010}{http://all-geo.org/volcan01010} or follow him on Twitter \href{https://twitter.com/volcan01010}{@volcan01010}.}
 
-\bibliographystyle{short}
+\bibliographystyle{alpha}
+\twocolumn[
+  \begin{@twocolumnfalse}
 \bibliography{literary,geneura}
+\end{@twocolumnfalse}
+]
+
+\section{Data Policy}
+
+\section{Budget}
+
+
 \end{document}
