@@ -63,6 +63,8 @@
 
 % Gantt chart package
 \usepackage{pgfgantt}
+\usepackage{booktabs}
+\usepackage{longtable}
 
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
@@ -330,6 +332,18 @@ These tools will have to be applied to the text, probably preceded by
 a preprocessing phase where it will be analyzed. We will talk about
 this phase in the next subsection.
 
+When available, for instance if Google is actively engaged in this
+project, we will use user feedback in metrics. For instance, it would
+be interesting to make short tweets about something (a blog post or
+one of the PI's books) and measuring the number of clicks it generates
+depending on the formulation and trying to discard other factors (like
+time of the day, number of previous tweets and so on). In principle,
+we are thinking about using just {\em internal} metrics that will
+depend only on the text itself. But we will leave the door open to
+using feedback as another criterium in a multi-criteria search
+algorithm, or at least to measure the correlation between internal and
+external quality metrics. 
+
 \subsection{Creating an abstract sentence representation}
 
 The main objective of this phase in the investigation will be to find,
@@ -473,6 +487,13 @@ The PI and our research group GeNeura is committed to open science, so
 all software will be released under a strong open source license
 whenever upstream libraries allow it.
 
+These tasks will form the core of a several research subprojects
+including, for instance, interactive evolution or text-mining to
+measure the effect of a text on readers, that will be performed by
+graduate students for their degree projects or Master thesis. It will
+also coordinate with the MADE project that is the subject of the PhD
+work by Rubén Héctor García. 
+
 \subsubsection{Workpackage two}
 
 This package will include ancillary work, including administration,
@@ -480,9 +501,61 @@ communication and community engagement. Each will receive a different
 task, with rolling deliverables and a duration that will span the
 whole project, 12 months.
 
-
- 
-
+\begin{itemize}
+\item {\bf Task 2.1}  Administration. Carried out by the PI, it will
+  include job offer announcement and selection, administrative work
+  related to payments and expenses.
+\item {\bf Task 2.2} Communication. Communication is an essential part
+  of scientific work, and should not be limited to presenting our work
+  in conferences and submitting it to scientific journals. It should
+  include communication of all kind of scientific {\em artifacts},
+  from preliminary results to fragments of code to tutorials to
+  divulgatory introductions to the research topics. Our group
+  maintains \href{http://geneura.wordpress.com}{a blog} where we
+  publish with an open license and include all posters, conference,
+  coursework and tutorial slides, and other material that we might
+  find interesting for the general public. Our group also maintains a
+  \href{http://twitter.com}{Twitter account {\tt @geneura}} (along
+  with others for particular projects, like {\tt @canubeproject}). Besides, we are committed
+  to open science, being active users of open access sites such as
+  FigShare and ArXiV. 
+The first one is used for short or position
+  papers, and the latter for drafts and long-form papers. We also use
+  Research Gate for publication of research data attached to the
+  papers that use them. Since communication is integral with the
+  scientific data flow, both persons (PI and PhD student) will engage
+  with it. In this section we also include publication in an Open
+  Access journal such as \href{http://plosone.org}{PLOS One}, whose
+  open model enhances dissemination and increases engagement by the
+  community. Their publication model also allows the attachment of
+  experimental data to the paper, a publication model we support and
+  which allows an easy replication of results. 
+\item{\bf Task 2.3} Software maintenance. Analysis and programming
+  tasks will be performed mainly by the PhD student, although the PI
+  will also participate in design and formation of the student; these
+  task are part in general of workpackage one. Our
+  group has experience using GitHub (the PI account is included in his
+  CV. GitHub allows the setup of continuous integration via Travis CI
+  or other systems (such as Shippable), which, in fact, we have used
+  even for the novel we have written and the one we are writing right
+  now (in Spanish). We follow the {\em release early, release often}
+  motto and our first step when creating a new project is to create a
+  GitHub repository, thus releasing the software from the very first
+  line of code. This release includes also configuration of
+  applications and experiment results, ad is done, for instance, with
+  the
+  \href{https://github.com/JJ/nodeo/tree/master/app/PPSN}{experiments
+    performed} for recent conferences, fully uploaded and available at
+    GitHub. In general, this task should be supplemented with another
+  devoted exclusively to community engagement, however, this will have
+  to be an integral part of the project by presenting results in
+  events such as FOSDEM (in which the PI has participated for two years
+  in a row, last year with a
+  \href{https://www.youtube.com/watch?v=bhP9AFEoZ6o}{presentation
+    about writing novels using Perl}. Other venues are Betabeers
+  chapter in Granada, hackathons or local open source conferences like
+  Codemotion.
+\end{itemize}
 
 
 \section{Our experience}
@@ -518,7 +591,90 @@ analysis to co-authorship in particular areas
 
 \section{Data Policy}
 
+The PI of this proposal is currently the director of the
+\href{http://osl.ugr.es}{Free Software Office} at the univerisity of
+Granada. He has been engaged in the release of Free/Libre software
+since the 90s, when he participated in the Swarm agent-based modelling
+system \cite{breeder}. We have got an integral approach to open
+science, including:
+\begin{enumerate}
+\item Release of all software used with a strong protective license
+  (Affero GPL or GPL). The University of Granada has a protocol for
+  releasing open source software which makes it one of the free
+  Spanish universities to have one. As director of the FSO, we
+  encourage the use of these protective licenses whenever there is no
+  conflict with the upstream licence of the software included or
+  modified.
+\item Open source experiments, which are generally published as they
+  are done in GitHub. The release of these experiments include
+  provisioning scripts for virtual machines that can carry out the
+  experiment (in some cases), configuration files, scripts for
+  launching the applications and processing the data, R history and
+  data files used for processing data and generating graphs, for
+  instance, \href{https://github.com/JJ/hoborg/tree/master/data}{this
+    directory} includes all continuous integration logs for the
+  ``Manuel'' open source model, that will be used to write a paper (to
+  be published, or actually written) on evolution of literary metrics
+  on this novel; other experimental data is mentioned in the paper
+  that uses them. Data is by default released under the same license
+  as the code, but in cases where we upload data to FigShare we use a
+  specific Open Database License. In fact, this proposal has been
+  written using this open policy and
+  \href{https://github.com/JJ/literatech-proposal}{can be downloaded
+    from GitHub}.
+\item Open access papers. Since we do not usually have a budget for
+  publishing, we use ArXiV (our first paper there was published in
+  2002 \cite{baldwin-AEB02} or FigShare (which we have started to use
+  very recently) for publishing papers and
+  datasets and, in one occasion, ResearchGate for datasets. In
+  general, we try to make available under an open license at least one
+  paper describing every line of work, but in most cases conferences
+  or journals do not have that policy and we abide by it. Summary and
+  overview articles that we publish in our blog are available under an
+  Creative Commons {\tt cc-by-sa}, that is, open culture license. 
+\end{itemize}
+
+In this project we do not expect to use confidential data. We will use
+automatically generated text, our own novels and short stories, and
+public domain or creative commons literary texts. On the other hand,
+we will not make use of any kind of private information that should be
+protected under European data protection law. Our policy towards all
+kind of data, anyways, will be to opt for openness whenever possible. 
+
 \section{Budget}
 
+The budget requested from Google is included in Table \ref{budget}. 
+
+\begin{table*}[tb]
+\centering
+   \begin{tabular}{lr}
+    \toprule
+    Details      & Amount  Requested\\
+    \midrule
+    PhD student  support             &   30,000\$ \\
+    Travel/Conference support            & 6,000\$ \\
+    Publication in an open access journal     &  2,000\$   \\ 
+    Other costs & 2000\$ \\
+    \textsc{Total}  &\fbox{40,000\$}\\
+    \bottomrule
+  \end{tabular}
+\caption{Budget breakdown.\label{budget}}
+\end{table*}
+
+
+The cost of a PhD student is the standard cost for one year, including
+all costs. Travel and conference support include a trans-atlantic
+conference per person (PI and student) per year, or two European
+conferences, at a cost of 3000\$ per person. Any additional costs will
+be covered by other projects. Since our intention is to publish
+research in an open access journal, part of the budget is devoted to
+this issue.
+
+{\em Other costs} include contingencies such as repairing or buying
+parts for computing equipment used by the PI or PhD student (whose
+computing equipment will be covered by other projects), conference
+registration costs, graphic material for dissemination and, hiring
+cloud computing storage and CPU and other unexpected costs that might
+arise during the project.
 
 \end{document}
