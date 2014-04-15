@@ -122,7 +122,7 @@ can be transferred to the page and they, along with graphic
 illustrators, have used freehand software tools to perform all kind of
 tasks, from simple fills to more complex transitions. Animation artist
 work on models, and, instead of painstakingly moving physical models
-of their characterss  Harryhausen-style create models which are then
+of their characters  Harryhausen-style create models which are then
 used in complex software pipelines to create motion and, eventually,
 the whole motion picture.
 
@@ -132,11 +132,11 @@ affects creative as well as commercial writers. The most advanced tool
 that they use is a typo and grammar checker, but even so the draft has
 to go through several human eyes and minds to be corrected, polished
 at several levels (is this character necessary? Is this final coherent
-and genre-caononical?)
+and genre-canonical?)
 
 This project is the first step in the creation of methodologies, algorithms and
 software tools that aid in automation of the whole literary creation and
-copyediting process: from idea to final typesetting, and even improvement in new editions
+copy-editing process: from idea to final typesetting, and even improvement in new editions
 based on the automatic processing of literary reviews or any other
 kind of feedback received by the text.
 
@@ -193,15 +193,15 @@ project \href{http://literaryquality.huygens.knaw.nl/}{The riddle of
   literary quality}, a institute by the Huygens institute for the
 History of the Netherlands, funded by the Computational Humanities
 Programme. It is indeed, interesting to see this kind of initiatives,
-since they prove that measuring literaty quality computationally is
+since they prove that measuring literary quality computationally is
 still a challenge; in fact, we intend to take this problem a bit
-further by aiming to {\em improve} the quality of a literaty text
+further by aiming to {\em improve} the quality of a literary text
 using quality measures and stochastic optimization algorithms. 
 
 In fact, there are some works in this direction already; proactive evolution of text for its optimization has been done so far
 in a very controlled environment, such as technical texts
 \cite{Rascu06acontrolled,hernandez2004checking}. Doing it in a less
-constrained envirohment or incorporating interactive features
+constrained environment or incorporating interactive features
 has not been done so far, although nowadays is an easily available
 metric, since it is very easy to measure the success of an Instagram
 picture or Facebook post (the last of which is more {\em literary} in
@@ -277,7 +277,7 @@ achieve this minimum objective and go beyond it.
 In this section we will have a look on how the different objectives of
 this proposal are going to be tackled. Next we will talk about
 literary metrics or, indeed, the {\em riddle} of literary quality, a
-riddle we will have to sove, at least partially, if we want to {\em
+riddle we will have to solve, at least partially, if we want to {\em
   improve} it automatically
 
 \subsection{Literary metrics}
@@ -287,9 +287,9 @@ literature was probably found by surrealists, but the first author
 that was attracted to mathematics as a source of inspiration was
 Raymond Queneau, a French author and translator who also became a
 member of the French Mathematics Society, writing a book entitled {\em
-  The fundaments of literature after David Hilberg},
+  The fundamentals of literature after David Hilbert},
 \cite{queneau1976fondements}. He was mentioned as wanting to introduce
-mathematic, that is, algorithmic, notions into poetry or the creation
+mathematical, that is, algorithmic, notions into poetry or the creation
 of a novel as soon as the twenties, more or less contemporarily to
 surrealism. \cite{emmer2005mathematics}. In fact, combinatorics played
 a big role in his work ``Exercises in Style''
@@ -319,17 +319,17 @@ of literary quality and choose a measure, or a set of measures, that
 should be optimized in order to make a text a {\em better} text. In
 the process we will find whether literary quality is, in fact, a
 single-objective problem, with many measures correlated with each
-other, or a multimodal algorith, with multiple measures independent
-with each other and needing a multiobjective optimization algorithm to
+other, or a multimodal algorithm, with multiple measures independent
+with each other and needing a multi objective optimization algorithm to
 deal with them. In fact, {\em readability} measures with which we have
 had certain experience are correlated, but as soon as we introduce
 other measures this might not be true. At the end of this period, we
-will have a set of automatic quality measures taht we will apply to
+will have a set of automatic quality measures that we will apply to
 texts to perform a multi- or single-objective optimization process on
 them. 
 
 These tools will have to be applied to the text, probably preceded by
-a preprocessing phase where it will be analyzed. We will talk about
+a pre-processing phase where it will be analyzed. We will talk about
 this phase in the next subsection.
 
 When available, for instance if Google is actively engaged in this
@@ -340,7 +340,7 @@ depending on the formulation and trying to discard other factors (like
 time of the day, number of previous tweets and so on). In principle,
 we are thinking about using just {\em internal} metrics that will
 depend only on the text itself. But we will leave the door open to
-using feedback as another criterium in a multi-criteria search
+using feedback as another criterion in a multi-criteria search
 algorithm, or at least to measure the correlation between internal and
 external quality metrics. 
 
@@ -425,9 +425,9 @@ huge space which will need specific techniques to deal with it.
 Several methods can be used for combinatorial optimization. In
 general, simulated quenching
 \cite{DBLP:journals/apin/CastilloARMGLG12} obtains results that are
-faster, but less accurate, than evoltutionary algorithms, and has been
+faster, but less accurate, than evolutionary algorithms, and has been
 applied successfully to another combinatorial optimization problem,
-the MasterMind puzzle \cite{jj-ppsn96}. This algorith, available in
+the MasterMind puzzle \cite{jj-ppsn96}. This algorithm, available in
 our {\tt Algorithm::Evolutionary} library \cite{ae09}, can be readily
 tried as a first approximation. However, evolutionary algorithms are
 slower but more efficient, so we will test different implementations,
@@ -437,7 +437,7 @@ a solution in a reasonable amount of time.
 
 The evolutionary algorithm will have to adapt to the single or
 multi-objective metrics chosen in the first step. Any of them has been
-well studied and there are many implementations available, from ourn
+well studied and there are many implementations available, from our
 own to the libraries written in Java \href{DBLP:conf/iwann/MereloRACML11}{ECJ} (which is the closest thing
 to a standard, with several dozens versions so far) or \href{http://code.google.com/p/deap/}{DEAP} (in
 Python, with increasing popularity). 
@@ -457,7 +457,7 @@ off-the-shelf technology that is readily available when possible.
 This and other horizontal issues will be the matter of the next
 subsection,
 
-\subsection{Horizontal issues and temporization}
+\subsection{Horizontal issues and timing}
 
 Since it is a project that will take a single year, we will have only
 two workpackages.
@@ -469,12 +469,12 @@ be carried by the Principal Investigator as well as the hired PhD
 student.
 
 \begin{itemize}
-\item {\bf Task 1.1} Addresses first objetive: analysis and formulation of
+\item {\bf Task 1.1} Addresses first objective: analysis and formulation of
   quality metrics for literary texts. Release of software implementation.
  {\bf Deliverable}: technical
   report and/or conference paper. Duration: months 0 to 3.
 \item {\bf Task 1.2} Creation of models of literary texts by merging
-  part-of-speech tagging and ontolologies. {\bf Deliverable}: technical
+  part-of-speech tagging and ontologies. {\bf Deliverable}: technical
   report and/or conference paper.  Release of a new version of
   software including this. Duration: months 4 to 7. 
 \item {\bf Task 1.3} Design and implementation of an algorithm for
@@ -510,7 +510,7 @@ whole project, 12 months.
   in conferences and submitting it to scientific journals. It should
   include communication of all kind of scientific {\em artifacts},
   from preliminary results to fragments of code to tutorials to
-  divulgatory introductions to the research topics. Our group
+  divulgative introductions to the research topics. Our group
   maintains \href{http://geneura.wordpress.com}{a blog} where we
   publish with an open license and include all posters, conference,
   coursework and tutorial slides, and other material that we might
@@ -592,7 +592,7 @@ analysis to co-authorship in particular areas
 \section{Data Policy}
 
 The PI of this proposal is currently the director of the
-\href{http://osl.ugr.es}{Free Software Office} at the univerisity of
+\href{http://osl.ugr.es}{Free Software Office} at the university of
 Granada. He has been engaged in the release of Free/Libre software
 since the 90s, when he participated in the Swarm agent-based modelling
 system \cite{breeder}. We have got an integral approach to open
@@ -663,7 +663,7 @@ The budget requested from Google is included in Table \ref{budget}.
 
 
 The cost of a PhD student is the standard cost for one year, including
-all costs. Travel and conference support include a trans-atlantic
+all costs. Travel and conference support include a trans-Atlantic
 conference per person (PI and student) per year, or two European
 conferences, at a cost of 3000\$ per person. Any additional costs will
 be covered by other projects. Since our intention is to publish
