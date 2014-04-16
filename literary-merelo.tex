@@ -1,0 +1,325 @@
+%    This program is free software: you can redistribute it and/or modify
+%    it under the terms of the GNU General Public License as published by
+%    the Free Software Foundation, either version 3 of the License, or
+%    (at your option) any later version.
+%
+%    This program is distributed in the hope that it will be useful,
+%    but WITHOUT ANY WARRANTY; without even the implied warranty of
+%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%    GNU General Public License for more details.
+%
+%    You should have received a copy of the GNU General Public License
+%    along with this program.  If not, see <http://www.gnu.org/licenses/>.\documentclass[a4paper,11pt]{article}
+%
+%    Copyright: John A Stevenson, University of Edinburgh, Twitter: @volcan01010
+
+\documentclass[a4paper,12pt,twocolumn]{article}
+
+%%%%%%%%%%% PAGE SIZE: Set up page with 2 cm margins
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{2cm}{0cm}
+
+%%%%%%%%%%% FONTS:
+\usepackage[english]{babel} 
+\usepackage[T1]{fontenc} % Font encoding for Icelandic characters
+\usepackage{textgreek} % Greek letters without going into Math mode
+\usepackage{eulervm} % This makes mathtext upright, not italic
+
+\usepackage[scaled]{helvet} % Helvetica.  Similar to Arial as specified by NERC
+\renewcommand*{\familydefault}{\sfdefault} % Helvetica needs default font to be SansSerif
+%\usepackage{libertine} % Linux Libertine font is a nice serif font
+%\usepackage{lmodern} % use Latin Modern for that LaTeX look
+
+%%%%%%%%%%% REFERENCES: 
+%\usepackage[round]{natbib} % Bibliography / reference package
+\usepackage{multicol} % Make reference list multicolumn
+
+%%%%%%%%%%% FIGURES:
+\usepackage{graphicx} % Includes graphics
+\usepackage{float} % Allows forcing of figure locations
+\usepackage{wrapfig} % Wraps text round images
+% Change figure caption font
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+%%%%%%%%%%% SPACE SAVERS:
+\usepackage{mdwlist} % less gaps in itemize sections
+\usepackage{titlesec} % format of section titles
+\titlespacing{\section}{0pt}{8pt}{4pt}
+\titlespacing{\subsection}{0pt}{6pt}{2pt}
+%\usepackage{setspace}
+%\onehalfspacing
+\linespread{0.96}
+
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\footskip}{0.6cm}
+%\setlength{\bibsep}{0pt}
+\setlength{\parskip}{0.5\parskip}
+\setlength{\textfloatsep}{0.5\textfloatsep}
+
+%%%%%%%%%%% OTHER:
+\usepackage{hyperref} % Hyperlinks in pdf (remove 'hidelinks' to display)
+\usepackage[dvipscolors]{xcolor}
+
+% Gantt chart package
+\usepackage{pgfgantt}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+\usepackage[modulo]{lineno}
+
+\title{Towards literary engineering: algorithm and tools for
+  evaluating, enhancing and outright producing literary works}
+\author{J. J. Merelo\\
+\href{http://atc.ugr.es}{Dept. Architecture and Computer Technology}\\
+\href{http://etsiit.ugr.es}{ETSIIT}\\
+C/ Daniel Saucedo Aranda, s/n\\
+18071 \href{http://www.ugr.es}{University of Granada} (Spain)\\
+Email: {\tt jmerelo@ugr.es}}
+
+\date{\today}
+
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\pagebreak
+
+\smallskip
+\hrule height 1pt 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Outline}
+\begin{quote}
+  This project proposes the construction of a methodology and
+  set of tools that aim to assess the quality, identify authors and,
+  eventually, use those measures for the improvement of written texts
+  (including hypertext), bringing the era of computer-aided
+  copy-editing and literature in the same way computer-aided drawing
+  has helped, and continues to help, art as well as engineering.
+\end{quote}
+\rule{\textwidth}{1pt}
+\end{@twocolumnfalse}
+]
+\section{Introduction}
+
+The editorial industry is in turmoil since the extensive consumption
+of ebooks and the creation of self-publishing platforms such as Kindle
+Direct Publishing, iTunes and Lulu. These platforms imply that many more actors are accessing the market, but at the same time, due to low profit levels, it is complicated or even impossible to live professionally off it, since hundreds of daily sales are needed for even a minimum wage.
+
+At the same time, the quality of these works is variable. The
+publishing industry has many tools: correctors, editors, career
+managers and translators that are not available to single, independent
+authors, or are at a high cost. These {\em literary tools} are mainly manual and have not been
+automated beyond grammar and spelling corrections. The product of translation tools,
+at the same time, has eventually to be reviewed by a human to reach a
+good level of quality.
+
+This project is the first step in the creation of methodologies, algorithms and
+software tools that aid in automation of the whole literary creation and
+copy-editing process: from idea to final typesetting, and even improvement in new editions
+based on the automatic processing of literary reviews or any other
+kind of feedback received by the text.
+
+This project will match natural language processing tools for
+analyzing original works as well as reviews, ontologies and thesaurus
+to improve the quality of written text based on several metrics: similarity to
+text-mined classic works and diversity and {\em style} parameters
+assigned automatically to the work, and eventually improvement of the
+manuscript using metaheuristics such as evolutionary algorithms or
+simulated annealing. In the case of published text, {\em quality}
+assessment can include metrics that depend on the perceived fitness of
+the text, including reviews and, in the case of description of
+products, sales.
+
+The project involves the creation of new algorithms for text
+improvementand automatic quality
+evaluation based on text mining, as well as development of open-source
+literary engineering tools that can be used by authors as a help to
+creation as well as editorials as decision-support systems.  
+
+Several scenarios are foreseen: an author using the tool to improve a
+literary manuscript as well as creating new editions based on social
+network reviews; a games creator using the tool to improve backstories
+for characters; interactive fiction apps or websites that change story
+based on user interaction and reaction and automatic adaptation of
+text description of products in an online website depending on the
+customer profile or the interaction of customers with it. 
+
+\section{State of the art}
+
+In general, computational linguistics  has received a lot of
+attention lately, with yearly symposiums devoted to it and many
+authors advocating computational approaches to text analysis, as
+opposed to purely qualitative ones \cite{roque2012towards}. The main lines
+of research are concentrated around analysis and comparison of texts;
+analysis tools include  writing-style
+features \cite{ASI:ASI20316} are also used for this kind of analysis
+and phrase structure fragments \cite{van2012literary}, which has
+recently been used to compare different kinds of literary corpus
+\cite{jautze2013high}. These two papers have been the result of the
+project \href{http://literaryquality.huygens.knaw.nl/}{The riddle of
+  literary quality}, a institute by the Huygens institute for the
+History of the Netherlands, funded by the Computational Humanities
+Programme. It is indeed, interesting to see this kind of initiatives,
+since they prove that measuring literary quality computationally is
+still a challenge; in fact, we intend to take this problem a bit
+further by aiming to {\em improve} the quality of a literary text
+using quality measures and stochastic optimization algorithms. 
+
+In fact, there are some works in this direction already; proactive evolution of text for its optimization has been done so far
+in a very controlled environment, such as technical texts
+\cite{Rascu06acontrolled,hernandez2004checking}. Doing it in a less
+constrained environment or incorporating interactive features
+has not been done so far, although nowadays is an easily available
+metric, since it is very easy to measure the success of an Instagram
+picture or Facebook post (the last of which is more {\em literary} in
+the traditional sense, although the extensive use of hashtags by the
+former could be also open to optimization). 
+
+That is why this project will advance the state of the art in several
+areas, be them algorithmic, methodological or purely technical,
+providing open source tools to carry out text-improvement tasks. 
+
+\section{Objectives}
+\label{sec:obj}
+
+The main objective is to create a tool that is able to improve the literary
+quality of a written text. This objective is divided in several
+sub-objectives. \begin{itemize}
+\item Examine different measures of literary quality and create an
+  aggregated value (or {\em fitness} that describes in a single value
+  (or multiple criteria) the quality of a work.
+\item Optimize text-analysis tools to be able to make a fast model of
+  a written work.
+\item Create an abstract phrase model that will be used to represent
+  it and, eventually, optimize it
+\item Design an evolutionary algorithm for optmization of literary
+  texts that uses as fitness the measure described in the first bullet
+  point, as representation the model described in the third bullet
+  point which has been obtained in a reasonable amount of time thanks
+  to the tool created in the second bullet point
+\end{itemize}
+
+Our minimum objective will be to obtain a 10\% improvement of the Fog and Flesch index of said
+  texts with a runtime of less than 24 hours. 
+
+\section{Methodology}
+\label{sec:meth}
+
+The first step in our methodology will be to delve into the puzzle
+of literary quality and choose a measure, or a set of measures, that
+should be optimized in order to make a text a {\em better} text. In
+the process we will find whether literary quality is, in fact, a
+single-objective problem, with many measures correlated with each
+other, or a multimodal algorithm, with multiple measures independent
+with each other and needing a multi objective optimization algorithm to
+deal with them. In fact, {\em readability} measures with which we have
+had certain experience are correlated, but as soon as we introduce
+other measures this might not be true. At the end of this period, we
+will have a set of automatic quality measures that we will apply to
+texts to perform a multi- or single-objective optimization process on
+them. When available, for instance if Google is actively engaged in this
+project, we will use user feedback in metrics. For instance, it would
+be interesting to make short tweets about something (a blog post or
+one of the PI's books) and measuring the number of clicks it generates
+depending on the formulation and trying to discard other factors (like
+time of the day, number of previous tweets and so on). In principle,
+we are thinking about using just {\em internal} metrics that will
+depend only on the text itself. But we will leave the door open to
+using feedback as another criterion in a multi-criteria search
+algorithm, or at least to measure the correlation between internal and
+external quality metrics. 
+
+However, even if the optimization phase is done automatically, writing
+the phrase, selecting possible words for improvement and creating
+possible alternatives is done by hand, with resulting low
+productivity. 
+
+What we propose in this project is to do that phase automatically and
+for large (several hundreds of sentences) texts. That processing is
+done by so-called \href{http://en.wikipedia.org/wiki/Part-of-speech_tagging}{{\em part-of-speech} taggers}, which involves a
+process of word-category disambiguation. A {\em tagged} sentence
+includes a model of the sentence with each word labelled (tagged) with
+its position in the sentence, and at the same time a sentence
+structure 
+
+Once parts of speech have been tagged, a second processing phase will
+look for possible alternatives. Some words like ``word'' will have no
+alternative. But some like {\em tree} might be substituted by hyponyms
+like {\em oak tree} or {\em poplar} or hypernyms like {\em plant}.
+Some words will be quite malleable ({\em rain}) while others might be
+much less {\em fiduciary}. At any rate, by using ontologies like
+Wordnet (or equivalent in other languages) we will build a hyper-model
+of the text by substituting every word by a list of possible
+substitutions.
+
+The text will then be represented by one of the different
+alternatives; a set of values for these alternatives will form the
+{\em chromosome} for the evolutionary algorithm that will be run on
+them \cite{eiben2002evolutionary}. This is a combinatorial
+optimization problem (finding the best combination) for which
+ready-made solutions already exist. However, its sheer size will
+present some challenges that will also have to be solved. This will be
+addressed in the next section, that deals with the evolutionary
+algorithm itself.
+
+Several methods can be used for combinatorial optimization. In
+general, simulated quenching obtains results that are
+faster, but less accurate, than evolutionary algorithms, and has been
+applied successfully to another combinatorial optimization problem,
+the MasterMind puzzle \cite{jj-ppsn96}. This algorithm, available in
+our {\tt Algorithm::Evolutionary} library \cite{ae09}, can be readily
+tried as a first approximation. However, evolutionary algorithms are
+slower but more efficient, so we will test different implementations, to obtain
+a solution in a reasonable amount of time. The evolutionary algorithm will have to adapt to the single or
+multi-objective metrics chosen in the first step. 
+
+\subsection{Acknowledgements}
+\textit{This \LaTeX template was produced by John A Stevenson}
+
+\bibliographystyle{alpha}
+\bibliography{literary,geneura}
+
+\section{Data Policy}
+
+The PI of this proposal is currently the director of the
+\href{http://osl.ugr.es}{Free Software Office} at the university of
+Granada.  We have  an integral approach to open
+science, including open source release of all applications and
+libraries, open data for experiments and configurations, and open
+access papers if possible.
+
+\section{Budget}
+
+Please see Table \ref{budget}
+
+\begin{table}[htb]
+\centering
+   \begin{tabular}{lr}
+    \toprule
+    Details      & Amount \\
+    \midrule
+    PhD student  support             &   30,000\$ \\
+    Travel/Conference support            & 6,000\$ \\
+    Publication in an open access journal     &  2,000\$   \\ 
+    Other costs & 2,000\$ \\
+    \textsc{Total}  &\fbox{40,000\$}\\
+    \bottomrule
+  \end{tabular}
+\caption{Budget breakdown.\label{budget}}
+\end{table}
+
+Please note that JJ Merelo, along with Joaqu\'in Fern\'andez Valdivia,
+recently received the CS4HS award (April 1st). Technically, the money
+has not been received yet and we are starting to carry out the work
+without any difficulty, so technically I list myself as ``not
+funded''. You can check out progress at \href{http://cs4hs.ugr.es}{the
+  project website}
+
+\end{document}
