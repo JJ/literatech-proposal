@@ -1,0 +1,260 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MGRGA{\etalchar{+}}11}
+
+\bibitem[AAjdFC12]{0295-5075-100-5-58002}
+Diego~R. Amancio, Sandra~M. Aluisio, Osvaldo N.~Oliveira jr., and Luciano
+  da~F.~Costa.
+\newblock Complex networks analysis of language complexity.
+\newblock {\em EPL (Europhysics Letters)}, 100(5):58002, 2012.
+
+\bibitem[AJdFC12]{1367-2630-14-4-043029}
+Diego~Raphael Amancio, Osvaldo N~Oliveira Jr, and Luciano da~Fontoura~Costa.
+\newblock Identification of literary movements using complex networks to
+  represent texts.
+\newblock {\em New Journal of Physics}, 14(4):043029, 2012.
+
+\bibitem[BHMG{\etalchar{+}}96]{jj-ppsn96}
+J.~L. Bernier, Carlos-Ilia Herr\'aiz, Juan-Julián Merelo-Guerv\'os, S.~Olmeda,
+  and A.~Prieto.
+\newblock {Solving {\em {M}aster{M}ind} using {GA}s and simulated annealing: a
+  case of dynamic constraint optimization}.
+\newblock In {\em Proceedings PPSN, Parallel Problem Solving from Nature IV},
+  number 1141 in Lecture Notes in Computer Science, pages 553--563.
+  Springer-Verlag, 1996.
+
+\bibitem[CAC{\etalchar{+}}02]{baldwin-AEB02}
+P.~Castillo, M.~G. Arenas, J.~G. Castellano, J.~J. Merelo, A.~Prieto, Rivas,
+  and Romero.
+\newblock Lamarckian evolution and the {B}aldwin effect in evolutionary neural
+  networks.
+\newblock pages 284--293. Universidad de Extremadura, Febrero 2002.
+\newblock Also available as \url{http://arxiv.org/abs/cs/0603004}.
+
+\bibitem[CAR{\etalchar{+}}12]{DBLP:journals/apin/CastilloARMGLG12}
+Pedro~A. Castillo, Maribel~Garc\'{\i}a Arenas, N.~Rico, Antonio~Miguel Mora,
+  Pablo Garc\'{\i}a-S{\'a}nchez, Juan Lu\'{\i}s~Jim{\'e}nez Laredo, and Juan
+  J.~Merelo Guerv{\'o}s.
+\newblock Determining the significance and relative importance of parameters of
+  a simulated quenching algorithm using statistical tools.
+\newblock {\em Appl. Intell.}, 37(2):239--254, 2012.
+
+\bibitem[CFM{\etalchar{+}}08]{gecco08:castillo}
+P.A. Castillo, G.~Fernández, A.~Mora, J.J. Merelo, J.L. Bernier, and A.~Prieto.
+\newblock Evolving machine microprograms.
+\newblock In {\em Genetic and Evolutionary Computation Conference, GECCO2008},
+  pages 1103--1104, New York, NY, USA, 2008. ACM Press.
+
+\bibitem[CMM{\etalchar{+}}08a]{hardwareevo}
+P.~A. Castillo, J.J. Merelo, M.~Moreto, F.~J. Cazorla, M.~Valero, A.M. Mora,
+  J.L.J. Laredo, and S.A. McKee.
+\newblock Evolutionary system for prediction and optimization of hardware
+  architecture performance.
+\newblock In {\em WCCI 2008 Proceedings}, pages 1941--1948. IEEE Press, 2008.
+
+\bibitem[CMM{\etalchar{+}}08b]{castillo:evostar08}
+P.~A. Castillo, A.~M. Mora, J.~J. Merelo, J.~L.~J. Laredo, M.~Moreto, F.~J.
+  Cazorla, M.~Valero, and S.~A. McKee.
+\newblock Architecture performance prediction using evolutionary artificial
+  neural networks.
+\newblock In Mario Giacobini, editor, {\em Applications of Evolutionary
+  Computing}, number 4974 in LNCS, pages 175--183. Springer, 2008.
+
+\bibitem[CMMMG11]{DBLP:journals/corr/abs-1108-0261}
+Carlos Cotta, Antonio~Miguel Mora, Cecilia Merelo-Molina, and Juan
+  Juli{\'a}n~Merelo Guerv{\'o}s.
+\newblock Fifa world cup 2010: A network analysis of the champion team play.
+\newblock {\em CoRR}, abs/1108.0261, 2011.
+
+\bibitem[EDM10]{elson2010extracting}
+David~K Elson, Nicholas Dames, and Kathleen~R McKeown.
+\newblock Extracting social networks from literary fiction.
+\newblock In {\em Proceedings of the 48th Annual Meeting of the Association for
+  Computational Linguistics}, pages 138--147. Association for Computational
+  Linguistics, 2010.
+
+\bibitem[Emm05]{emmer2005mathematics}
+Michele Emmer.
+\newblock Mathematics and raymond queneau.
+\newblock {\em Mathematics and Culture II}, pages 195--200, 2005.
+
+\bibitem[ES02]{eiben2002evolutionary}
+Aguston~E Eiben and Marc Schoenauer.
+\newblock Evolutionary computing.
+\newblock {\em Information Processing Letters}, 82(1):1--6, 2002.
+
+\bibitem[FIB{\etalchar{+}}11]{DBLP:conf/cec/FernandesIBRG11}
+Carlos~M. Fernandes, Carlos Isidoro, F{\'a}bio Barata, Agostinho~C. Rosa, and
+  Juan Juli{\'a}n~Merelo Guerv{\'o}s.
+\newblock From pherographia to color pherographia: Color sketching with
+  artificial ants.
+\newblock In {\em IEEE Congress on Evolutionary Computation}, pages 1124--1131.
+  IEEE, 2011.
+
+\bibitem[GG14]{Merelo201401}
+Juan Julián~Merelo Guervós and Angel Pablo~Hinojosa Gutiérrez.
+\newblock {The book of Pi: What nobody had ever told you with Pi. And I'm
+  pretty sure about that, since I generated it randomly a while ago. (Spanish
+  Edition)}, 1 2014.
+
+\bibitem[GGM14]{2014arXiv1403.3084G}
+R.~H. {Garc{\'{\i}}a-Ortega}, P.~{Garc{\'{\i}}a-S{\'a}nchez}, and J.~J.
+  {Merelo}.
+\newblock {Emerging archetypes in massive artificial societies for literary
+  purposes using genetic algorithms}.
+\newblock {\em ArXiv e-prints}, March 2014.
+
+\bibitem[GPC94]{grossman1994informed}
+Stuart~A Grossman, Steven Piantadosi, and Charles Covahey.
+\newblock Are informed consent forms that describe clinical oncology research
+  protocols readable by most patients and their families?
+\newblock {\em Journal of Clinical Oncology}, 12(10):2211--2215, 1994.
+
+\bibitem[Gun69]{gunning1969fog}
+Robert Gunning.
+\newblock The fog index after twenty years.
+\newblock {\em Journal of Business Communication}, 6(2):3--13, 1969.
+
+\bibitem[HR04]{hernandez2004checking}
+Maryline Hernandez and Ecaterina Rascu.
+\newblock Checking and correcting technical documents.
+\newblock {\em Bulletin de linguistique appliqu{\'e}e et g{\'e}n{\'e}rale},
+  0(29):69--83, 2004.
+
+\bibitem[JKCJ13]{jautze2013high}
+KJ~Jautze, CW~Koolen, AW~Cranenburgh, and HA~Jong.
+\newblock From high heels to weed attics: a syntactic investigation of chick
+  lit and literature.
+\newblock In {\em Proceedings of the Workshop on Computational Linguistics for
+  Literature}. Association for Computational Linguistics, 2013.
+
+\bibitem[MC07]{ec-network-2007}
+Juan~Julián Merelo and Carlos Cotta.
+\newblock Building bridges: the role of subfields in metaheuristics.
+\newblock {\em SIGEvolution, the newsletter of the ACM interest group on
+  Genetic and Evolutionary Computation}, 1(4):9--15, January 2007.
+\newblock Available from
+  \url{http://www.sigevolution.org/issues/pdf/SIGEVOlution200604.pdf}.
+
+\bibitem[Mer97]{breeder}
+J.~J. Merelo.
+\newblock {\em Breeder user\'{}s and programmer\'{}s Manual}, 1997.
+\newblock Available from
+  \url{http://info.fysik.dtu.dk/chaos/guides/swarmdocs/swarmlibs/libga.ps}.
+
+\bibitem[MG14]{nodeo2014}
+Juan~Juli\'{a}n Merelo~Guerv\'{o}s.
+\newblock {NodEO}, a evolutionary algorithm library in {Node}.
+\newblock Technical report, GeNeura group, university of Granada
+  \url{http://geneura.wordpress.com}, March 2014.
+\newblock Available at \url{http://figshare.com/articles/nodeo/972892}.
+
+\bibitem[MGCA10]{ae09}
+Juan-Julián Merelo-Guervós, Pedro-A. Castillo, and Enrique Alba.
+\newblock {\tt Algorithm::Evolutionary}, a flexible {P}erl module for
+  evolutionary computation.
+\newblock {\em Soft Computing}, 14(10):1091--1109, 2010.
+\newblock Accesible at \url{http://sl.ugr.es/000K}.
+
+\bibitem[MGL{\etalchar{+}}07]{gecco07:workshop:dcor}
+J.~J. Merelo, Antonio~Mora Garc\'{\i}a, Juan Luis~Jim\'{e}nez Laredo, Juan
+  Lupi\'{o}n, and Fernando Tricas.
+\newblock Browser-based distributed evolutionary computation: performance and
+  scaling behavior.
+\newblock In {\em GECCO '07: Proceedings of the 2007 GECCO conference companion
+  on Genetic and evolutionary computation}, pages 2851--2858, New York, NY,
+  USA, 2007. ACM Press.
+
+\bibitem[MGRGA{\etalchar{+}}11]{DBLP:conf/iwann/MereloRACML11}
+Juan-Juli{\'a}n Merelo-Guerv{\'o}s, Gustavo Romero, Maribel Garc\'{\i}a-Arenas,
+  Pedro~A. Castillo, Antonio-Miguel Mora, and Juan-Lu\'{\i}s
+  Jim{\'e}nez-Laredo.
+\newblock Implementation matters: Programming best practices for evolutionary
+  algorithms.
+\newblock In Joan Cabestany, Ignacio Rojas, and Gonzalo~Joya Caparr{\'o}s,
+  editors, {\em IWANN (2)}, volume 6692 of {\em Lecture Notes in Computer
+  Science}, pages 333--340. Springer, 2011.
+
+\bibitem[MMC13]{merelo2013complex}
+Juan~Juli{\'a}n Merelo, Antonio~M Mora, and Carlos Cotta.
+\newblock Complex systems in sports: Introduction to the special issue.
+\newblock {\em Journal of Systems Science and Complexity}, 26(1):1--3, 2013.
+
+\bibitem[MME93]{ecal93}
+J.~J. Merelo, A.~Moreno, and A.~Etxeberria.
+\newblock Artificial organisms with adaptive sensors.
+\newblock In J.~L. Deneubourg, editor, {\em Proceedings ECAL'93}, volume~2,
+  pages 750--757, May 1993.
+
+\bibitem[Que76]{queneau1976fondements}
+Raymond Queneau.
+\newblock {\em Les Fondements de la litt{\'e}rature: d'apr{\`e}s David
+  Hilbert}.
+\newblock R. Queneau, 1976.
+
+\bibitem[Que13]{queneau2013exercises}
+Raymond Queneau.
+\newblock {\em Exercises in style}.
+\newblock New Directions Publishing, 2013.
+
+\bibitem[Ras06]{Rascu06acontrolled}
+Ecaterina Rascu.
+\newblock A controlled language aproach to text optimization in technical
+  documentation.
+\newblock In {\em In Proceedings of KONVENS 2006}, 2006.
+
+\bibitem[RFF94]{roberts1994effects}
+John~C Roberts, Robert~H Fletcher, and Suzanne~W Fletcher.
+\newblock Effects of peer review and editing on the readability of articles
+  published in annals of internal medicine.
+\newblock {\em Jama}, 272(2):119--121, 1994.
+
+\bibitem[Roq12]{roque2012towards}
+Antonio Roque.
+\newblock Towards a computational approach to literary text analysis.
+\newblock In {\em Proceedings of the Workshop on Computational Linguistics for
+  Literature}, pages 97--104, 2012.
+
+\bibitem[SSHTC14]{seo14:snf}
+Jong-Kyu Seo, Sung-Hwan, Kim Hae-Sung Tak, and Hwan-Gue Cho.
+\newblock A structural analysis of literary fictions with social network
+  framework.
+\newblock In Chih-Cheng Hung and Jiman Hong, editors, {\em PROCEEDINGS OF THE
+  2014 ACM SYMPOSIUM ON APPLIED COMPUTING}, pages 634--640. ACM, ACM, March
+  2014.
+
+\bibitem[TVdVG13]{DBLP:conf/cec/TrujilloVVG13}
+Leonardo Trujillo, Mario~Garc\'{\i}a Valdez, Francisco~Fern{\'a}ndez de~Vega,
+  and Juan Juli{\'a}n~Merelo Guerv{\'o}s.
+\newblock Fireworks: Evolutionary art project based on evospace-interactive.
+\newblock In {\em IEEE Congress on Evolutionary Computation}, pages 2871--2878.
+  IEEE, 2013.
+
+\bibitem[Val97a]{AISB97}
+Juan-Julián Merelo-Guerv\'os; A. Prieto; V. Rivas; J.~L. Valderrábano.
+\newblock Designing advertising strategies using a genetic algorithm.
+\newblock In {\em 4th AISB Workshop on Evolutionary Computing}, Lecture Notes
+  in Computer Science. Springer, 1997.
+
+\bibitem[Val97b]{merelo:ecal97}
+Juan-Julián Merelo-Guerv\'os; A. Prieto; V. Rivas; Juan~Luis Valderrábano.
+\newblock An agent based model for the study of publicity/consumer dynamics.
+\newblock Poster accepted at the {ECAL'97} conference; available from
+  \url{http://www.cogs.susx.ac.uk/ecal97/present.html}, Also available as Santa
+  Fe Institute Working-Papers 97-03-018 from
+  \url{http://www.santafe.edu/sfi/publications/Working-Papers/97-03-018.ps},
+  1997.
+
+\bibitem[VCH12]{van2012literary}
+Andreas Van~Cranenburgh and ING Huygens.
+\newblock Literary authorship attribution with phrase-structure fragments.
+\newblock In {\em Proceedings of the Workshop on Computational Linguistics for
+  Literature}, pages 59--63, 2012.
+
+\bibitem[ZLCH06]{ASI:ASI20316}
+Rong Zheng, Jiexun Li, Hsinchun Chen, and Zan Huang.
+\newblock A framework for authorship identification of online messages:
+  Writing-style features and classification techniques.
+\newblock {\em Journal of the American Society for Information Science and
+  Technology}, 57(3):378--393, 2006.
+
+\end{thebibliography}
