@@ -14,7 +14,7 @@ Diego~Raphael Amancio, Osvaldo N~Oliveira Jr, and Luciano da~Fontoura~Costa.
 \newblock {\em New Journal of Physics}, 14(4):043029, 2012.
 
 \bibitem[BHMG{\etalchar{+}}96]{jj-ppsn96}
-J.~L. Bernier, Carlos-Ilia Herr\'aiz, Juan-Julián Merelo-Guerv\'os, S.~Olmeda,
+J.~L. Bernier, Carlos-Ilia Herr\'aiz, Juan-JuliÃ¡n Merelo-Guerv\'os, S.~Olmeda,
   and A.~Prieto.
 \newblock {Solving {\em {M}aster{M}ind} using {GA}s and simulated annealing: a
   case of dynamic constraint optimization}.
@@ -36,10 +36,11 @@ Pedro~A. Castillo, Maribel~Garc\'{\i}a Arenas, N.~Rico, Antonio~Miguel Mora,
   J.~Merelo Guerv{\'o}s.
 \newblock Determining the significance and relative importance of parameters of
   a simulated quenching algorithm using statistical tools.
-\newblock {\em Appl. Intell.}, 37(2):239--254, 2012.
+\newblock {\em Applied Intelligence}, 37(2):239--254, 2012.
 
 \bibitem[CFM{\etalchar{+}}08]{gecco08:castillo}
-P.A. Castillo, G.~Fernández, A.~Mora, J.J. Merelo, J.L. Bernier, and A.~Prieto.
+P.A. Castillo, G.~FernÃ¡ndez, A.~Mora, J.J. Merelo, J.L. Bernier, and
+  A.~Prieto.
 \newblock Evolving machine microprograms.
 \newblock In {\em Genetic and Evolutionary Computation Conference, GECCO2008},
   pages 1103--1104, New York, NY, USA, 2008. ACM Press.
@@ -90,18 +91,13 @@ Carlos~M. Fernandes, Carlos Isidoro, F{\'a}bio Barata, Agostinho~C. Rosa, and
 \newblock In {\em IEEE Congress on Evolutionary Computation}, pages 1124--1131.
   IEEE, 2011.
 
-\bibitem[GG14]{Merelo201401}
-Juan Julián~Merelo Guervós and Angel Pablo~Hinojosa Gutiérrez.
-\newblock {The book of Pi: What nobody had ever told you with Pi. And I'm
-  pretty sure about that, since I generated it randomly a while ago. (Spanish
-  Edition)}, 1 2014.
-
 \bibitem[GGM14]{2014arXiv1403.3084G}
 R.~H. {Garc{\'{\i}}a-Ortega}, P.~{Garc{\'{\i}}a-S{\'a}nchez}, and J.~J.
   {Merelo}.
 \newblock {Emerging archetypes in massive artificial societies for literary
   purposes using genetic algorithms}.
 \newblock {\em ArXiv e-prints}, March 2014.
+\newblock Available at \url{http://adsabs.harvard.edu/abs/2014arXiv1403.3084G}.
 
 \bibitem[GPC94]{grossman1994informed}
 Stuart~A Grossman, Steven Piantadosi, and Charles Covahey.
@@ -128,7 +124,7 @@ KJ~Jautze, CW~Koolen, AW~Cranenburgh, and HA~Jong.
   Literature}. Association for Computational Linguistics, 2013.
 
 \bibitem[MC07]{ec-network-2007}
-Juan~Julián Merelo and Carlos Cotta.
+Juan~JuliÃ¡n Merelo and Carlos Cotta.
 \newblock Building bridges: the role of subfields in metaheuristics.
 \newblock {\em SIGEvolution, the newsletter of the ACM interest group on
   Genetic and Evolutionary Computation}, 1(4):9--15, January 2007.
@@ -144,12 +140,11 @@ J.~J. Merelo.
 \bibitem[MG14]{nodeo2014}
 Juan~Juli\'{a}n Merelo~Guerv\'{o}s.
 \newblock {NodEO}, a evolutionary algorithm library in {Node}.
-\newblock Technical report, GeNeura group, university of Granada
-  \url{http://geneura.wordpress.com}, March 2014.
+\newblock Technical report, GeNeura group, March 2014.
 \newblock Available at \url{http://figshare.com/articles/nodeo/972892}.
 
 \bibitem[MGCA10]{ae09}
-Juan-Julián Merelo-Guervós, Pedro-A. Castillo, and Enrique Alba.
+Juan-JuliÃ¡n Merelo-GuervÃ³s, Pedro-A. Castillo, and Enrique Alba.
 \newblock {\tt Algorithm::Evolutionary}, a flexible {P}erl module for
   evolutionary computation.
 \newblock {\em Soft Computing}, 14(10):1091--1109, 2010.
@@ -230,13 +225,13 @@ Leonardo Trujillo, Mario~Garc\'{\i}a Valdez, Francisco~Fern{\'a}ndez de~Vega,
   IEEE, 2013.
 
 \bibitem[Val97a]{AISB97}
-Juan-Julián Merelo-Guerv\'os; A. Prieto; V. Rivas; J.~L. Valderrábano.
+Juan-JuliÃ¡n Merelo-Guerv\'os; A. Prieto; V. Rivas; J.~L. ValderrÃ¡bano.
 \newblock Designing advertising strategies using a genetic algorithm.
 \newblock In {\em 4th AISB Workshop on Evolutionary Computing}, Lecture Notes
   in Computer Science. Springer, 1997.
 
 \bibitem[Val97b]{merelo:ecal97}
-Juan-Julián Merelo-Guerv\'os; A. Prieto; V. Rivas; Juan~Luis Valderrábano.
+Juan-JuliÃ¡n Merelo-Guerv\'os; A. Prieto; V. Rivas; Juan~Luis ValderrÃ¡bano.
 \newblock An agent based model for the study of publicity/consumer dynamics.
 \newblock Poster accepted at the {ECAL'97} conference; available from
   \url{http://www.cogs.susx.ac.uk/ecal97/present.html}, Also available as Santa
